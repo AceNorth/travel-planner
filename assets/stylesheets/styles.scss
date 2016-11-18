@@ -1,0 +1,39 @@
+.nav-bar{
+	width: 100%;
+	background-color: red;
+	padding: 1em;
+}
+
+.rightside{
+	float: right;
+
+	.itinerary{
+		
+		.daylabel{
+			background-color: transparent;
+		}
+		.daybuttons{
+
+		}
+		.to-do-list{
+
+		}
+	}
+
+	h4{
+			font-weight: bold;
+	}
+
+	.selectors{
+		text-align: left;
+		/*background-color: green;*/
+		padding: 1em;
+		
+		select{
+			width: 60%;
+		}
+		
+		display: inline;
+		}
+}
+

@@ -1,0 +1,18 @@
+.nav-bar {
+  width: 100%;
+  background-color: red;
+  padding: 1em; }
+
+.rightside {
+  float: right; }
+  .rightside .itinerary .daylabel {
+    background-color: transparent; }
+  .rightside h4 {
+    font-weight: bold; }
+  .rightside .selectors {
+    text-align: left;
+    /*background-color: green;*/
+    padding: 1em;
+    display: inline; }
+    .rightside .selectors select {
+      width: 60%; }
