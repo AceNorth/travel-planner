@@ -26,9 +26,6 @@ router.get('/', function(req, res, next){
 	
 	promise.all([hotelPromise, restaurantPromise, activityPromise])
 	.then(function(result){
-		// console.log('result: ', result[0]);
-		console.log('result: ', result[1]);
-		// console.log('result: ', result[2]);
 
 		// res.send(result);
 		res.render('mainpage', {hotels:result[0], restaurants:result[1], activities:result[2]})

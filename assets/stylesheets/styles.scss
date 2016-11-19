@@ -6,34 +6,48 @@
 
 .rightside{
 	float: right;
-
-	.itinerary{
-		
-		.daylabel{
-			background-color: transparent;
-		}
-		.daybuttons{
-
-		}
-		.to-do-list{
-
-		}
-	}
-
-	h4{
-			font-weight: bold;
-	}
-
-	.selectors{
-		text-align: left;
-		/*background-color: green;*/
-		padding: 1em;
-		
+	background-color: brown;
+	
+	.selectors {
+	
+		margin: 3em;	
 		select{
 			width: 60%;
 		}
 		
 		display: inline;
+
+		.sect{
+			background-color: green;
+			padding: 1em;
 		}
+	}
+
+	.itinerary{
+		
+		.daylabel{
+			background-color: transparent;
+			text-align: center;
+			font-weight: bold;
+
+		}
+		.daybuttons{
+			background-color: yellow;
+			padding: .4em;
+
+		}
+		.to-do-list{
+
+		}
+
+		.sect{
+			background-color: green;
+			padding: 1em;
+		}
+	}
+
+	h4{
+		font-weight: bold;
+	}
 }
 

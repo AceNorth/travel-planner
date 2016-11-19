@@ -11,43 +11,65 @@
 <body>
 
 	<!-- nav bar -->
-	<div class="nav-bar">
-		Navigation
-	</div>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	    
+	      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-flash"></span> Trip Planner</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">About</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 
 	<!-- map -->
-	<div class="map"></div>
+	<div id="map-canvas">
+		<!-- <a href="/map.js"></a> -->
+	</div>
 
 	<div class="rightside">
 		<!-- selectors -->
 		<div class="selectors">
-			<h4>Hotels</h4>
-		
-			<select name= 'Hotels'>
-			{% for hotel in hotels%}
-				<option value= {{hotel.name}}>{{hotel.name}}</option>
+			
+			<div class = "sect">
+				<h4>Hotels</h4>
+				<select name= 'Hotels'>
+				{% for hotel in hotels%}
+					<option value= {{hotel.name}}>{{hotel.name}}</option>
 				{% endfor %}
-			</select>
+				</select>
 
-			<button class="btn-danger">X</button>
+				<button class="btn-danger">X</button>
+			</div>
 
-			<h4>Restaurants</h4>
-			<select name= 'Hotels'>
-			{% for restaurant in restaurants%}
-				<option value= {{restaurant.name}}>{{restaurant.name}}</option>
-			{% endfor %}
-			</select>
+			<div class = "sect">
+				<h4>Restaurants</h4>
+				<select name= 'Hotels'>
+				{% for restaurant in restaurants%}
+					<option value= {{restaurant.name}}>{{restaurant.name}}</option>
+				{% endfor %}
+				</select>
+				<button class="btn-danger">X</button>
+			</div>
 
-			<button class="btn-danger">X</button>
+			
+			<div class = "sect">
+				<h4>Activities</h4>
+				<select name= 'Hotels'>
+				{% for activity in activities%}
+					<option value= {{activity.name}}>{{activity.name}}</option>
+				{% endfor %}
+				</select>
 
-			<h4>Activities</h4>
-			<select name= 'Hotels'>
-			{% for activity in activities%}
-				<option value= {{activity.name}}>{{activity.name}}</option>
-			{% endfor %}
-			</select>
-
-			<button class="btn-danger">X</button>
+				<button class="btn-danger">X</button>
+			</div>
 
 		</div>
 
@@ -60,7 +82,7 @@
 				<button class="btn-danger">3</button>
 				<button class="btn-danger">+</button>
 			</div>
-			<div class="to-do-list">
+			<div class="to-do-list sect">
 				<ul>
 					<li>[[xxxxxxxxxx]]</li>
 				</ul>
@@ -73,10 +95,7 @@
 			</div>
 		</div>
 		</div>
-
-
-	
-	
+	<script src="/map.js"></script>
 </body>
 
 {% endblock %}
